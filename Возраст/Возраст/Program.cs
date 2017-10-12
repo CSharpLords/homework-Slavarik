@@ -12,26 +12,22 @@ namespace ConsoleApp3
         {
             Console.WriteLine("Введите ваш возраст");
             int age = int.Parse(Console.ReadLine());
-            int number = 10;
-            int number1 = 20;
-            if (number <= age)
+            if (age >= 10)
             {
-                Console.WriteLine("Вы подросток");
-                Console.ReadLine();
-                if (age >= number1)
+                if (age < 20)
                 {
-                    Console.WriteLine("Вы уже Взрослый");
+                    Console.WriteLine("Вы подросток");
                     Console.ReadLine();
                 }
                 else
                 {
-                    Console.WriteLine("Вы подросток");
+                    Console.WriteLine("Вы уже слишком стар");
                     Console.ReadLine();
                 }
             }
             else
             {
-                Console.WriteLine("Вы ещё ребёнок");
+                Console.WriteLine("У вас ещё вся жизнь впереди");
                 Console.ReadLine();
             }
         }
