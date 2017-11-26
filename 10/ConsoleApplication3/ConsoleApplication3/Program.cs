@@ -9,17 +9,23 @@ namespace ConsoleApplication3
     {
         static void Main(string[] args)
         {
-            while(true){
-                Console.WriteLine("Введите грузоподъёмность НЛО:");
-                double a = double.Parse(Console.ReadLine());
+            Console.WriteLine("Введите грузоподъёмность НЛО:");
+            int a = int.Parse(Console.ReadLine());
+            int SumWheithCow = 0;
+            int cow = 0;
+            while (true)
+            {
                 Console.WriteLine("Введите массу коровы");
-                double first = double.Parse("Введите массу коровы");
-                double second = double.Parse(Console.ReadLine());
-                Console.WriteLine("Введите массу коровы");
-                double third = double.Parse(Console.ReadLine());
-
-                if (a = first + second + third) {
-
+                int b = int.Parse(Console.ReadLine());
+                SumWheithCow = b + SumWheithCow;
+                cow = cow + 1;
+                if (a == SumWheithCow || a <= SumWheithCow)
+                {
+                    Console.WriteLine("Отсек для коров заполнен, взлетаем!Количество коров=" + cow);
+                    break;
+                }
+            }
+            Console.ReadLine();
 
         }
     }
