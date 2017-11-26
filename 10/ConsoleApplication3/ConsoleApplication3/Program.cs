@@ -18,12 +18,12 @@ namespace ConsoleApplication3
                 Console.WriteLine("Введите массу коровы");
                 int b = int.Parse(Console.ReadLine());
                 SumWheithCow = b + SumWheithCow;
-                cow = cow + 1;
-                if (a == SumWheithCow || a <= SumWheithCow)
+                if (a <= SumWheithCow)
                 {
                     Console.WriteLine("Отсек для коров заполнен, взлетаем!Количество коров=" + cow);
                     break;
                 }
+                cow = cow + 1;
             }
             Console.ReadLine();
 
