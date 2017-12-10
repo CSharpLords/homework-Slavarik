@@ -21,13 +21,11 @@ namespace LoopyLandscape {
 
 			Pen pen = new Pen(Brushes.BlueViolet, 8);
 			// Упростите код с помощью цикла for
-			graphics.DrawLine(pen, 20, 40, 80, 80); // первая пара чисел - координаты начала отрезка, вторая - координаты конца
-			graphics.DrawLine(pen, 80, 40, 140, 80);
-			graphics.DrawLine(pen, 140, 40, 200, 80);
-			graphics.DrawLine(pen, 200, 40, 260, 80);
-			graphics.DrawLine(pen, 260, 40, 320, 80);
-			graphics.DrawLine(pen, 320, 40, 380, 80);
-			graphics.DrawLine(pen, 380, 40, 440, 80);
+            for (int a = 20; a < 380; a = a + 60)
+            {
+                graphics.DrawLine(pen, a, 40, a + 60, 80);
+            }
+ 
 		}
 	}
 }
