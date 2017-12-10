@@ -20,9 +20,15 @@ namespace LoopyLandscape {
 			graphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
 
 			// шар
-			graphics.FillEllipse(Brushes.Violet, 30, 50, 46, 66); // первая пара чисел - координаты, вторая - ширина и высота
+            for (int a = 30; a <= 330; a = a + 60)
+            {
+                graphics.FillEllipse(Brushes.Violet, a, 50, 46, 66);    // первая пара чисел - координаты, вторая - ширина и высота
+            }                           
 			// нитка
-			graphics.DrawLine(Pens.BlueViolet, 53, 116, 210, 300); // первая пара чисел - координаты начала отрезка, вторая - координаты конца
+            for (int b = 53; b <= 353; b = b + 60)
+            {
+                graphics.DrawLine(Pens.BlueViolet, b, 116, 210, 300);   // первая пара чисел - координаты начала отрезка, вторая - координаты конца
+            }
 
 			// бобр
 			DrawHopper(208, 240);
