@@ -11,16 +11,12 @@ namespace Большие_Предыд_Числа
         static void Main(string[] args)
         {
             int[] numbers = { 5, 6, 2, 2, 7 };
-            int behind = 0;
-            int next = 1;
             while (next < numbers.Length)
             {
-                if (numbers[next] == numbers[behind])
+                if (numbers[0] > 0 && numbers[1] > 0 || numbers[0] < 0 && numbers[1] < 0)
                 {
-                    Console.WriteLine(numbers[next]);
+                    Console.WriteLine(numbers[0] + "" + numbers[1]);
                 }
-                behind = behind + 1;
-                next = next + 1;
             }
             Console.ReadLine();
         }
