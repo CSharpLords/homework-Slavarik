@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Пара чисел", "Пара чисел\Пара чисел.csproj", "{D7B5600F-7C6A-4B6D-ACD2-FD3686A5BA19}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D7B5600F-7C6A-4B6D-ACD2-FD3686A5BA19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7B5600F-7C6A-4B6D-ACD2-FD3686A5BA19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7B5600F-7C6A-4B6D-ACD2-FD3686A5BA19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7B5600F-7C6A-4B6D-ACD2-FD3686A5BA19}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8A1613FD-1CBD-4D7D-84C7-5B5AE9239DDE}
+	EndGlobalSection
+EndGlobal
