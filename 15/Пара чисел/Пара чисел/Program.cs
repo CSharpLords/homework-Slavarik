@@ -10,7 +10,7 @@ namespace Большие_Предыд_Числа
     {
         static void Main(string[] args)
         {
-            int[] numbers = { -5, 6, 2, 2, 7 };
+            int[] numbers = { -5, 6, -2, 2, -7 };
             int n = 0;
             int back = 0;
             int next = 1;
