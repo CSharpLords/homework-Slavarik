@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,18 +10,21 @@ namespace Большие_Предыд_Числа
     {
         static void Main(string[] args)
         {
-            int[] numbers = { 5, 6, 2, 2, 7 };
-            int behind = 0;
+            int[] numbers = { -5, 6, 2, 2, 7 };
+            int n = 0;
+            int back = 0;
             int next = 1;
-            while (next < numbers.Length)
+            while(n < 1)
             {
-                if (numbers[next] == numbers[behind])
+                if (numbers[back] > 0 && numbers[next] > 0 || numbers[back] < 0 && numbers[next] < 0 || numbers[back] == 0 && numbers[next] == 0)
                 {
-                    Console.WriteLine(numbers[next]);
+                    Console.WriteLine(numbers[back] + " " + numbers[next]);
+                    n = n + 1;
                 }
-                behind = behind + 1;
+                back = back + 1;
                 next = next + 1;
-            }
+            }    
+
             Console.ReadLine();
         }
     }
