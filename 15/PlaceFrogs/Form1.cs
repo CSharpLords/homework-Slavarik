@@ -3,6 +3,7 @@ using System.Windows.Forms;
 
 namespace PlaceFrogs {
     public partial class Form1 : Form {
+        int c = 50;
         Graphics graphics;
         Image frog = Image.FromFile("../../frog.png");
         Image lilypad = Image.FromFile("../../lilypad.png");
@@ -18,9 +19,8 @@ namespace PlaceFrogs {
             // рисуем кувшинки и лягушек
             for (int i = 0; i < 1000; i += 250) {
                 DrawLilypad(i, 0);
-            }
-            for (int i = 50; i < 1000; i += 250) {
-                DrawFrog(i, 35);
+                DrawFrog(c, 35);
+                c = c + 250;
             }
         }
 
