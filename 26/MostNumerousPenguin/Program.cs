@@ -16,7 +16,37 @@ namespace MostNumerousPenguin {
 		}
 
 		static string GetMostNumerous(string[] penguins) {
-			return "";
+            int ep = 0;
+            int mp = 0;
+            int lp = 0;
+            for (int y = 0; y < penguins.Length; y++) {
+                if (penguins[y] == "Emperor Penguin")
+                {
+                    ep = ep + 1;
+                }
+                if (penguins[y] == "Macaroni Penguin")
+                {
+                    mp = mp + 1;
+                }
+                if (penguins[y] == "Litlle Penguin")
+                {
+                    lp = lp + 1;
+                }
+            }    
+                if (ep > mp && ep > lp)
+                {
+                    return "Emperor penguin";
+                }
+                if (mp > ep && mp > lp)
+                {
+                    return "Macoroni penguin";
+                }
+                if (lp > ep && lp > mp)
+                {
+                    return "Litlle penguin";
+                }            
+
+			return ""; 
 		}
 	}
 }
