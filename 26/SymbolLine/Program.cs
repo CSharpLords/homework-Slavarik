@@ -12,5 +12,14 @@ namespace SymbolLine {
 
 			Console.ReadLine();
 		}
+        static void PrintSymbols(string Picture , int amount) {
+            string Picture2 = Picture;
+            for (int n = 1; n < amount; n++)
+            {
+                Picture = Picture + Picture2;
+
+            }
+            Console.WriteLine(Picture);
+        }
 	}
 }
