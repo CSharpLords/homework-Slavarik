@@ -1,4 +1,4 @@
-﻿using System;
+﻿ using System;
 
 namespace ElementCounter {
 	class Program {
@@ -11,5 +11,18 @@ namespace ElementCounter {
 
 			Console.ReadLine();
 		}
+        static int GetElementCount(int[] massiv, int number)
+        {
+            int amount = 0;
+            for (int numeral = 0; numeral < massiv.Length; numeral++)
+            {
+                if (massiv[numeral] == number)
+                {
+                    amount++;
+                }
+            }
+            return amount;
+        }
+
 	}
 }
